@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Care Hospital</title>
+    <style>
+        body {
+            font-size: medium;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: aliceblue;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .header-table {
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        .header-table td {
+            padding: 10px;
+            text-align: center;
+        }
+        .nav {
+            margin: 20px 0;
+        }
+        .nav a {
+            color: #1976d2;
+            text-decoration: none;
+            margin: 0 8px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        footer {
+            margin: 250px;
+            padding: 10px;
+        }
+        .image-section img {
+            height: 100%;
+            width: 100%;
+            background-image: url("docbg.jpg");
+            background-size: contain;
+            background-position: center;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <table class="header-table">
+            <tr>
+                <td>
+                    <img src="download (1).jpg" alt="Logo" height="90">
+                </td>
+                <td>
+                    <b>Monday-Friday 08:00-19:00</b><br>
+                    Saturday and Sunday - CLOSED
+                </td>
+                <td>
+                    <b>+91 9911233611</b><br>
+                    office@citycare.com
+                </td>
+                <td>
+                    <b>27 Avenue</b><br>
+                    Gota Ahmedabad, 380060
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <div class="image-section">
+        <img src="docbg.jpg" alt="Doctor Background">
+    </div>
+
+    <div class="nav">
+        <a href="home2.html">Home</a> |
+        <a href="about2.html">About Us</a> |
+        <a href="services2.html">Services</a> | 
+        <a href="Doctor.html">Doctor</a> |
+        <a href="patient information.html">Patient Information</a> |
+        <a href="Appointment.html">Appointment</a> |
+        <a href="Emergency Services.html">Emergency services</a> |
+        <a href="Health Information.html">Health Information</a> |
+        <a href="insurance.html">Insurance</a> |
+        <a href="pharmacy.html">Pharmacy</a>
+    </div>
+
+    <div>
+        <h1>Welcome to City Care Hospital</h1>
+        <p>City Care Hospital is dedicated to providing high-quality healthcare services to our community. Our team of experienced professionals is here to ensure your health and well-being.</p>
+        <p>We offer a wide range of services, including emergency care, outpatient services, and specialized treatments. Our state-of-the-art facilities and compassionate staff are committed to delivering the best possible care.</p>
+        <p>For more information about our services or to schedule an appointment, please contact us at +91 9911233611 or email us at office@citycare.com</p>
+
+        <button onclick="showHours()">Click to see hospital hours</button>
+    </div>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2023 City Care Hospital. All rights reserved.</p>
+    </footer>
+
+    <script>
+      
+        window.onload = function () {
+            alert("Welcome to City Care Hospital!");
+        };
+
+  
+        function showHours() {
+            alert("We are open Monday to Friday from 08:00 to 19:00.\nClosed on Saturday and Sunday.");
+        }
+    </script>
+
+</body>
+</html>

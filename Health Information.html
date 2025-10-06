@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Information - City Care Hospital</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f8fb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-center {
+            text-align: center;
+            margin: 20px 0;
+            width: 90%;
+        }
+        h2 {
+            margin: 20px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .information {
+            width: 80%;
+            max-width: 600px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s, transform 0.7s;
+        }
+        .information.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .information table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .information tr {
+            border-bottom: 1px solid #eee;
+        }
+        .information td {
+            padding: 10px;
+            font-size: 16px;
+            color: #555;
+            vertical-align: top;
+        }
+        .nav-links {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-center">
+        <img src="download (1).jpg" alt="City Care Hospital Logo" height="150">
+    </div>
+    <div class="nav-links">
+        <a href="home2.html">Home</a> |
+        <a href="about2.html">About Us</a> |
+        <a href="services2.html">Services</a> | 
+        <a href="Doctor.html">Doctor</a> |
+        <a href="patient information.html">Patient Information</a> |
+        <a href="Appointment.html">Appointment</a> |
+        <a href="Emergency Services.html">Emergency services</a> |
+        <a href="Health Information.html">Health Information</a> |
+        <a href="insurance.html">Insurance</a> |
+        <a href="pharmacy.html">Pharmacy</a>
+    </div>
+
+    <h2>Health Information</h2>
+
+    <div class="information" id="infoSection">
+        <table>
+            <tr>
+                <td><b>Health Tips:</b></td>
+                <td>Regular exercise, a balanced diet, and adequate sleep are essential for maintaining good health.</td>
+            </tr>
+            <tr>
+                <td><b>Preventive Care:</b></td>
+                <td>Annual check-ups, vaccinations, and screenings can help prevent diseases and catch issues early.</td>
+            </tr>
+            <tr>
+                <td><b>Pediatrician</b></td>
+                <td>Our pediatricians specialize in the care of infants, children, and adolescents.</td>
+            </tr>
+            <tr>
+                <td><b>Cosmetic Surgeon</b></td>
+                <td>Our cosmetic surgeons specialize in aesthetic procedures to enhance appearance.</td>
+            </tr>
+            <tr>
+                <td><b>General Doctor</b></td>
+                <td>Our general doctors provide comprehensive healthcare services for all ages.</td>
+            </tr>
+            <tr>
+                <td><b>Patient Education:</b></td>
+                <td>We provide resources and workshops to educate patients about their health conditions and treatments.</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2023 City Care Hospital. All rights reserved.</p>
+    </footer>
+    <script>
+       
+        window.onload = function () {
+            document.getElementById('infoSection').classList.add('visible');
+        };
+    </script>
+</body>
+</html>

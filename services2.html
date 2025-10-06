@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Services - CityCare Hospital</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f8fb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-center img {
+            width: 60%;
+            max-width: 600px;
+            height: auto;
+            margin-top: 20px;
+        }
+        .nav-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0078d7;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #0056b3;
+        }
+        h1, h2 {
+            margin: 20px 0;
+            font-size: 2em;
+            color: #333;
+        }
+        .Services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .service-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+            padding: 20px;
+            margin: 15px;
+            width: calc(25% - 40px);
+            min-width: 220px;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: box-shadow 0.3s, transform 0.5s, opacity 0.5s;
+        }
+        .service-card h3 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+        .service-card:hover {
+            box-shadow: 0 8px 24px rgba(25, 118, 210, 0.18);
+            transform: scale(1.05);
+        }
+        .service-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        footer{
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            width: 100%;
+        }
+        @media (max-width: 900px) {
+            .Services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service-card {
+                width: 80%;
+                min-width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-center">
+        <img src="download (1).jpg" alt="City Care Hospital Logo" height="90">
+    </div>
+    <div class="nav-links">
+        <a href="home2.html">Home</a> |
+        <a href="about2.html">About Us</a> |
+        <a href="services2.html">Services</a> | 
+        <a href="Doctor.html">Doctor</a> |
+        <a href="patient information.html">Patient Information</a> |
+        <a href="Appointment.html">Appointment</a> |
+        <a href="Emergency Services.html">Emergency services</a> |
+        <a href="Health Information.html">Health Information</a> |
+        <a href="insurance.html">Insurance</a> |
+        <a href="pharmacy.html">Pharmacy</a>
+    </div>
+    <h1>Our Services</h1>
+
+    <div class="Services">
+        <div class="service-card">
+            <h3>DENTIST</h3>
+            <p>For your child whitest teeth</p>
+            <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
+        </div>
+        <div class="service-card">
+            <h3>CARDIOLOGIST</h3>
+            <p>Got a broken heart?</p>
+            <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
+        </div>
+        <div class="service-card">
+            <h3>CHIROPTACTOR</h3>
+            <p>Neck or back pain?</p>
+            <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
+        </div>
+        <div class="service-card">
+            <h3>PEDIATRICIAN</h3>
+            <p>Oral problems?</p>
+            <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
+        </div>
+    </div>
+    <footer>
+        <h3>
+            2025 City Care Hospital
+        </h3>
+    </footer>
+    <script>
+        // Show welcome message
+        window.onload = function () {
+            alert("Welcome to City Care Hospital Services!");
+            // Animate service cards
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach((card, i) => {
+                setTimeout(() => {
+                    card.classList.add('visible');
+                }, 200 + i * 200);
+            });
+        };
+    </script>
+</body>
+</html>

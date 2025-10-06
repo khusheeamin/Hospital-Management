@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment - City Care Hospital</title>
+    <body>
+        <style>
+            body{
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f8fb;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-center {
+                text-align: center;
+                margin: 20px 0;
+            }
+            .image-center img {
+                width: 60%;
+                max-width: 600px;
+                height: auto;
+            }
+            .nav-links {
+                text-align: center;
+                margin: 20px 0;
+            }
+            .nav-links a {
+                margin: 0 10px;
+                text-decoration: none;
+                color: #0078d7;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+            .nav-links a:hover {
+                color: #0056b3;
+            }
+            h2{
+                margin: 20px 0;
+                font-size: 24px;
+                color: #333;
+            }
+            .form-group {
+                width: 80%;
+                max-width: 600px;
+                margin: 20px auto;
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .form-group label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+            .form-group input,
+            .form-group select {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .form-group select {
+                background-color: #fff;
+            }
+            .form-group input[type="date"] {
+                padding: 6px;
+            }
+            .form-group input[type="submit"] {
+                background-color: #1976d2;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            .form-group input[type="submit"]:hover {
+                background-color: #155a8a;
+            }
+            footer {
+                text-align: center;
+                background: #fff;
+                color: #1976d2;
+                padding: 18px 0;
+                margin-top: 20px;
+                border-radius: 0 0 10px 10px;
+                border-top: 2px solid #1976d2;
+            }
+        </style>
+        <div class="image-center">
+            <img src="download (1).jpg" alt="">
+
+        </div>
+        <div class="nav-links">
+            <a href="home2.html">Home</a> |
+            <a href="about2.html">About Us</a> |
+            <a href="services2.html">Services</a> | 
+            <a href="Doctor.html">Doctor</a> |
+            <a href="patient information.html">Patient Information</a> |
+            <a href="Appointment.html">Appointment</a> |
+            <a href="Emergency Services.html">Emergency services</a> |
+            <a href="Health Information.html">Health Information</a> |
+            <a href="insurance.html">Insurance</a> |
+            <a href="pharmacy.html">Pharmacy</a>
+        </div>
+        <h2> Book Your Appointment</h2>
+
+          <div class="form-group">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name">
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="appointment-date">Appointment Date:</label>
+        <input type="date" id="appointment-date" name="appointment-date">
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="pediatrics">pediatrics</option>
+            <option value="Dental">Dental</option>
+            <option value="Cosmetic">Cosmetic</option>
+            <option value="General">General</option>
+            <label for="submit"></label>
+            <input type="submit" value="Book Appointment">
+            
+            </select>
+        </div>
+
+    </body>
+   
